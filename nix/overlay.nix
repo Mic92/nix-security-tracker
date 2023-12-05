@@ -27,9 +27,10 @@ in extraPkgs // {
       requests
       dataclass-wizard
       tqdm
-      # Custom dependencies injected via overlay
       pyngo
       django-ninja
+      # Custom dependencies injected via overlay
+      extraPkgs.pythonPackages.django-pgpubsub
     ];
 
     postInstall = ''
